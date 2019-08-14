@@ -1,0 +1,134 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: '2'
+
+volumes:
+  orderer.ipsum.io:
+  peer0.univ1.ipsum.io:
+  peer0.univ2.ipsum.io:
+  peer0.univ3.ipsum.io:
+  pgdata:
+
+networks:
+  byfn:
+
+services:
+  ca.ipsum.io:
+    image: hyperledger/fabric-ca
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca.scriptum.com
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.univ1.ipsum.io-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/%PRIVATE_KEY%
+    ports:
+      - "7054:7054"
+    command: sh -c 'fabric-ca-server start -b admin:adminpw'
+    volumes:
+      - /etc/fabric/crypto-config/peerOrganizations/univ1.ipsum.io/ca/:/etc/hyperledger/fabric-ca-server-config
+    container_name: ca.scriptum.io
+    networks:
+      - byfn 
+ 
+  orderer.ipsum.io:
+    extends:
+      file:   docker-compose-base.yaml
+      service: orderer.ipsum.io
+    container_name: orderer.ipsum.io
+    networks:
+      - byfn
+
+  peer0.univ1.ipsum.io:
+    container_name: peer0.univ1.ipsum.io
+    extends:
+      file: docker-compose-base.yaml
+      service: peer0.univ1.ipsum.io
+    networks:
+      - byfn
+
+  peer0.univ2.ipsum.io:
+    container_name: peer0.univ2.ipsum.io
+    extends:
+      file:  docker-compose-base.yaml
+      service: peer0.univ2.ipsum.io
+    networks:
+      - byfn
+
+  peer0.univ3.ipsum.io:
+    container_name: peer0.univ3.ipsum.io
+    extends:
+      file:  docker-compose-base.yaml
+      service: peer0.univ3.ipsum.io
+    networks:
+      - byfn
+
+  cli:
+    container_name: cli
+    image: hyperledger/fabric-tools:$IMAGE_TAG
+    tty: true
+    stdin_open: true
+    environment:
+      - GOPATH=/opt/gopath
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      #- CORE_LOGGING_LEVEL=DEBUG
+      - CORE_LOGGING_LEVEL=INFO
+      - CORE_PEER_ID=cli
+      - CORE_PEER_ADDRESS=peer0.univ1.ipsum.io:7051
+      - CORE_PEER_LOCALMSPID=univ1MSP
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/tls/ca.crt
+      - CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/users/Admin@univ1.ipsum.io/msp
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: /bin/bash
+    volumes:
+        - /var/run/:/host/var/run/
+        - /etc/fabric/chaincode/:/opt/gopath/src/github.com/chaincode
+        - /etc/fabric/crypto-config:/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/
+        - /etc/fabric/scripts:/opt/gopath/src/github.com/hyperledger/fabric/peer/scripts/
+        - /etc/fabric/channel-artifacts:/opt/gopath/src/github.com/hyperledger/fabric/peer/channel-artifacts
+        - /etc/fabric/tools-bin/:/opt/gopath/src/github.com/hyperledger/fabric/tools-bin
+        - /etc/fabric/network-management-scripts/:/opt/gopath/src/github.com/hyperledger/fabric/network-management-scripts
+    depends_on:
+      - orderer.ipsum.io
+      - peer0.univ1.ipsum.io
+      - peer0.univ2.ipsum.io
+      - peer0.univ3.ipsum.io
+    networks:
+      - byfn
+
+  explorerdb.ipsum.io:
+    container_name: explorerdb.ipsum.io
+    image: hyperledger/explorer-db:latest
+    environment:
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - byfn
+
+  fabric-explorer:
+    container_name: fabric-explorer
+    image: hyperledger/explorer:latest
+    ports:
+      - "8090:8080"
+    depends_on:
+      - explorerdb.ipsum.io
+      - orderer.ipsum.io
+      - peer0.univ1.ipsum.io
+      - peer0.univ2.ipsum.io
+      - peer0.univ3.ipsum.io
+    environment:
+      - DATABASE_HOST=explorerdb.scriptum.io
+      - DATABASE_PASSWD=password123
+      - DISCOVERY_AS_LOCALHOST=false
+    networks:
+      - byfn
+    volumes:
+      - /etc/fabric:/etc/fabric
