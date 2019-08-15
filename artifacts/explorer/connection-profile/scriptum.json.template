@@ -48,7 +48,7 @@
 	"peers": {
 		"peer0-%LC_ORG_NAME_1%": {
 			"tlsCACerts": {
-				"path": "/tmp/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+				"path": "/tmp/crypto/peerOrganizations/org1.example.com/peers/peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%/tls/ca.crt"
 			},
 			"url": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7051",
 			"eventUrl": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7053",
