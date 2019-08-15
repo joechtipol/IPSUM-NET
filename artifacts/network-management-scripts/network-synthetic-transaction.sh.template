@@ -35,15 +35,15 @@ echo "Channel name : "$CHANNEL_NAME
 ## Install chaincode on peer0.org1 and peer0.org2
 echo "Installing chaincode on peer0.organ1..."
 installChaincode 0 1
-echo "Install chaincode on peer0.organ2..."
-installChaincode 0 2
-echo "Install chaincode on peer0.organ3..."
-installChaincode 0 3
+# echo "Install chaincode on peer0.organ2..."
+# installChaincode 0 2
+# echo "Install chaincode on peer0.organ3..."
+# installChaincode 0 3
 
 
 # Instantiate chaincode on peer0.org2
-echo "Instantiating chaincode on peer0.org3..."
-instantiateChaincode 0 2
+echo "Instantiating chaincode on peer0.org1..."
+instantiateChaincode 0 1
 
 # Query chaincode on peer0.org1
 echo "Querying chaincode on peer0.org1..."
