@@ -20,7 +20,7 @@
 	"channels": {
 		"%CHANNEL_NAME%": {
 			"peers": {
-				"%PEER0_ORG1_ADDRESS%": {}
+				"peer0-%LC_ORG_NAME_1%": {}
 			},
 			"connection": {
 				"timeout": {
@@ -46,14 +46,14 @@
 		}
 	},
 	"peers": {
-		"%PEER0_ORG1_ADDRESS%": {
+		"peer0-%LC_ORG_NAME_1%": {
 			"tlsCACerts": {
 				"path": "/tmp/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
 			},
-			"url": "grpcs://%PEER0_ORG1_ADDRESS%:7051",
-			"eventUrl": "grpcs://%PEER0_ORG1_ADDRESS%:7053",
+			"url": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7051",
+			"eventUrl": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7053",
 			"grpcOptions": {
-				"ssl-target-name-override": "peer0.org1.example.com"
+				"ssl-target-name-override": "peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%"
 			}
 		}
 	}
