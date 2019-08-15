@@ -38,7 +38,7 @@
 			"mspid": "%LC_ORG_NAME_1%MSP",
 			"fullpath": true,
 			"adminPrivateKey": {
-				"path": "/tmp/crypto/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/users/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%/msp/keystore/9b5e1e91c5e7ca0c0e83799586e729d027e4c1275f079b6c59584f50c7df1faa_sk"
+				"path": "/tmp/crypto/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/users/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%/msp/keystore/%PRIVATE_KEYSTORE_MSP_ORG_1%"
 			},
 			"signedCert": {
 				"path": "/tmp/crypto/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/users/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%/msp/signcerts/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%-cert.pem"
@@ -48,7 +48,7 @@
 	"peers": {
 		"peer0-%LC_ORG_NAME_1%": {
 			"tlsCACerts": {
-				"path": "/tmp/crypto/peerOrganizations/org1.example.com/peers/peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%/tls/ca.crt"
+				"path": "/tmp/crypto/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/peers/peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%/tls/ca.crt"
 			},
 			"url": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7051",
 			"eventUrl": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7053",

@@ -62,7 +62,11 @@ REPO_URL="$(echo ${13} | sed 's/\//\\\//g'| sed 's/\-/\\-/g' | sed 's/\./\\./g')
 CFG_PATH="\/etc\/fabric"
 
 FABRIC_CA_PATH=$FABRIC_CFG_PATH/crypto-config/peerOrganizations/$LC_ORG_NAME_1.$DOMAIN_NAME/ca/
+FABRIC_KEYSTORE_ORG_1_PATH=$FABRIC_CFG_PATH/crypto-config/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/users/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%/msp/keystore/
+
 PRIVATE_KEY_ORG_1="$(ls $FABRIC_CA_PATH | grep _sk)"
+
+PRIVATE_KEYSTORE_MSP_ORG_1="$(ls $FABRIC_KEYSTORE_ORG_1_PATH | grep _sk)"
 
 
 ARCH=`uname -s | grep Darwin`
@@ -124,3 +128,7 @@ sed $OPTS "s/\%REPO_URL\%/$REPO_URL/g" $TEMPLATE_FILE
 
 echo "sed $OPTS "s/\%PRIVATE_KEY_ORG_1\%/$PRIVATE_KEY_ORG_1/g" $TEMPLATE_FILE"
 sed $OPTS "s/\%PRIVATE_KEY_ORG_1\%/$PRIVATE_KEY_ORG_1/g" $TEMPLATE_FILE
+
+
+echo "sed $OPTS "s/\%PRIVATE_KEYSTORE_MSP_ORG_1\%/$PRIVATE_KEYSTORE_MSP_ORG_1/g" $TEMPLATE_FILE"
+sed $OPTS "s/\%PRIVATE_KEYSTORE_MSP_ORG_1\%/$PRIVATE_KEYSTORE_MSP_ORG_1/g" $TEMPLATE_FILE
