@@ -108,7 +108,7 @@ installChaincode () {
   setGlobals $PEER $ORG
   VERSION=${3:-1.0}
         set -x
-  peer chaincode install -n mycc -v ${VERSION} -l ${LANGUAGE} -p ${CC_SRC_PATH} >&log.txt
+  peer chaincode install -n ipsumcc -v ${VERSION} -l ${LANGUAGE} -p ${CC_SRC_PATH} >&log.txt
   res=$?
         set +x
   cat log.txt
