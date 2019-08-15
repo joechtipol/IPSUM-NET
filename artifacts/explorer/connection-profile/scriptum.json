@@ -1,5 +1,5 @@
 {
-	"name": "first-network",
+	"name": "ipsum-network",
 	"version": "1.0.0",
 	"license": "Apache-2.0",
 	"client": {
@@ -7,7 +7,7 @@
 		"adminUser": "admin",
 		"adminPassword": "adminpw",
 		"enableAuthentication": false,
-		"organization": "Org1",
+		"organization": "%LC_ORG_NAME_1%",
 		"connection": {
 			"timeout": {
 				"peer": {
@@ -20,7 +20,7 @@
 	"channels": {
 		"scriptum": {
 			"peers": {
-				"peer0.org1.ipsum.io": {}
+				"%PEER0_ORG1_ADDRESS%": {}
 			},
 			"connection": {
 				"timeout": {
@@ -34,8 +34,8 @@
 		}
 	},
 	"organizations": {
-		"Org1MSP": {
-			"mspid": "Org1MSP",
+		"%LC_ORG_NAME_1%MSP": {
+			"mspid": "%LC_ORG_NAME_1%MSP",
 			"fullpath": true,
 			"adminPrivateKey": {
 				"path": "/etc/fabric/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/9b5e1e91c5e7ca0c0e83799586e729d027e4c1275f079b6c59584f50c7df1faa_sk"

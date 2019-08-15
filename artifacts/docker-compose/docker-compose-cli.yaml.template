@@ -11,6 +11,7 @@ volumes:
   peer0.%LC_ORG_NAME_2%.%DOMAIN_NAME%:
   peer0.%LC_ORG_NAME_3%.%DOMAIN_NAME%:
   pgdata:
+  walletstore:
 
 networks:
   byfn:
@@ -135,4 +136,8 @@ services:
     networks:
       - byfn
     volumes:
-      - /etc/fabric:/etc/fabric
+      - ../explorer/config.json:/opt/explorer/app/platform/fabric/config.json
+      - ../explorer/connection-profile:/opt/explorer/app/platform/fabric/connection-profile
+      - /etc/fabric/crypto-config:/tmp/crypto
+      - walletstore:/opt/wallet
+    command: sh -c "sleep 16&& node /opt/explorer/main.js && tail -f /dev/null"

@@ -1,7 +1,7 @@
 {
 	"network-configs": {
 		"first-network": {
-			"name": "first-network",
+			"name": "ipsum-network",
 			"profile": "./connection-profile/scriptum.json"
 		}
 	},

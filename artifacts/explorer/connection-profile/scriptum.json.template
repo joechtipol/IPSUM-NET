@@ -1,0 +1,60 @@
+{
+	"name": "ipsum-network",
+	"version": "1.0.0",
+	"license": "Apache-2.0",
+	"client": {
+		"tlsEnable": true,
+		"adminUser": "admin",
+		"adminPassword": "adminpw",
+		"enableAuthentication": false,
+		"organization": "%LC_ORG_NAME_1%MSP",
+		"connection": {
+			"timeout": {
+				"peer": {
+					"endorser": "300"
+				},
+				"orderer": "300"
+			}
+		}
+	},
+	"channels": {
+		"%CHANNEL_NAME%": {
+			"peers": {
+				"%PEER0_ORG1_ADDRESS%": {}
+			},
+			"connection": {
+				"timeout": {
+					"peer": {
+						"endorser": "6000",
+						"eventHub": "6000",
+						"eventReg": "6000"
+					}
+				}
+			}
+		}
+	},
+	"organizations": {
+		"%LC_ORG_NAME_1%MSP": {
+			"mspid": "%LC_ORG_NAME_1%MSP",
+			"fullpath": true,
+			"adminPrivateKey": {
+				"path": "/tmp/crypto/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/users/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%/msp/keystore/9b5e1e91c5e7ca0c0e83799586e729d027e4c1275f079b6c59584f50c7df1faa_sk"
+			},
+			"signedCert": {
+				"path": "/tmp/crypto/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/users/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%/msp/signcerts/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%-cert.pem"
+			}
+		}
+	},
+	"peers": {
+		"%PEER0_ORG1_ADDRESS%": {
+			"tlsCACerts": {
+				"path": "/tmp/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+			},
+			"url": "grpcs://%PEER0_ORG1_ADDRESS%:7051",
+			"eventUrl": "grpcs://%PEER0_ORG1_ADDRESS%:7053",
+			"grpcOptions": {
+				"ssl-target-name-override": "peer0.org1.example.com"
+			}
+		}
+	}
+}
