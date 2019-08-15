@@ -65,12 +65,12 @@ chaincodeInvoke () {
   # lets supply it directly as we know it using the "-o" option
   if [ -z "$CORE_PEER_TLS_ENABLED" -o "$CORE_PEER_TLS_ENABLED" = "false" ]; then
                 set -x
-    peer chaincode invoke -o orderer.ipsum.io:7050 -C $CHANNEL_NAME -n mycc -c '{"Args":["invoke","a","b","10"]}' >&log.txt
+    peer chaincode invoke -o orderer.ipsum.io:7050 -C $CHANNEL_NAME -n ipsumcc -c '{"function":"initLedger","Args":[]}' >&log.txt
     res=$?
                 set +x
   else
                 set -x
-    peer chaincode invoke -o orderer.ipsum.io:7050  --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -c '{"Args":["invoke","a","b","10"]}' >&log.txt
+    peer chaincode invoke -o orderer.ipsum.io:7050  --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -c '{"function":"initLedger","Args":[]}' >&log.txt
     res=$?
                 set +x
   fi
@@ -127,12 +127,12 @@ instantiateChaincode () {
   # lets supply it directly as we know it using the "-o" option
   if [ -z "$CORE_PEER_TLS_ENABLED" -o "$CORE_PEER_TLS_ENABLED" = "false" ]; then
                 set -x
-    peer chaincode instantiate -o orderer.ipsum.io:7050 -C $CHANNEL_NAME -n mycc -l ${LANGUAGE} -v ${VERSION} -c '{"Args":["init","a","100","b","200"]}' -P "OR  ('org1MSP.peer','org2MSP.peer','org3MSP.peer')" >&log.txt
+    peer chaincode instantiate -o orderer.ipsum.io:7050 -C $CHANNEL_NAME -n ipsumcc -l ${LANGUAGE} -v ${VERSION} -c '{"Args":[]}' -P "OR  ('org1MSP.peer','org2MSP.peer','org3MSP.peer')" >&log.txt
     res=$?
                 set +x
   else
                 set -x
-    peer chaincode instantiate -o orderer.ipsum.io:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -l ${LANGUAGE} -v 1.0 -c '{"Args":["init","a","100","b","200"]}' -P "OR ('org1MSP.peer','org2MSP.peer','org3MSP.peer')" >&log.txt
+    peer chaincode instantiate -o orderer.ipsum.io:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n ipsumcc -l ${LANGUAGE} -v 1.0 -c '{"Args":[]}' -P "OR ('org1MSP.peer','org2MSP.peer','org3MSP.peer')" >&log.txt
     res=$?
                 set +x
   fi
@@ -148,7 +148,7 @@ upgradeChaincode () {
     setGlobals $PEER $ORG
 
     set -x
-    peer chaincode upgrade -o orderer.ipsum.io:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -v 2.0 -c '{"Args":["init","a","90","b","210"]}' -P "OR ('org1MSP.peer','org2MSP.peer','org3MSP.peer')"
+    peer chaincode upgrade -o orderer.ipsum.io:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n ipsumcc -v 2.0 -c '{"Args":[]}' -P "OR ('org1MSP.peer','org2MSP.peer','org3MSP.peer')"
     res=$?
   set +x
     cat log.txt
@@ -207,7 +207,7 @@ chaincodeQuery_noVerify () {
      sleep $DELAY
      echo "Attempting to Query peer${PEER}.org${ORG} ...$(($(date +%s)-starttime)) secs"
      set -x
-     peer chaincode query -C $CHANNEL_NAME -n mycc -c '{"Args":["query","a"]}' >&log.txt
+     peer chaincode query -C $CHANNEL_NAME -n ipsumcc -c '{"Args":["queryStudentCredential","00000001"]}' >&log.txt
    res=$?
      set +x
      test $res -eq 0 && let rc=0
