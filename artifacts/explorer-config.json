@@ -1,45 +1,45 @@
 {
         "network-config": {
-                "univ1": {
-                        "name": "peer0-univ1",
-                        "mspid": "univ1MSP",
+                "org1": {
+                        "name": "peer0-org1",
+                        "mspid": "org1MSP",
                         "peer1": {
-                                "requests": "grpcs://37.187.121.67:7051",
-                                "events": "grpcs://37.187.121.67:7053",
-                                "server-hostname": "peer0.univ1.ipsum.io",
-                                "tls_cacerts": "/etc/fabric/crypto-config/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/tls/ca.crt"
+                                "requests": "grpcs://172.31.30.63:7051",
+                                "events": "grpcs://172.31.30.63:7053",
+                                "server-hostname": "peer0.org1.ipsum.io",
+                                "tls_cacerts": "/etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/tls/ca.crt"
                         },
                         "admin": {
-                                "key": "/etc/fabric/crypto-config/peerOrganizations/univ1.ipsum.io/users/Admin@univ1.ipsum.io/msp/keystore",
-                                "cert": "/etc/fabric/crypto-config/peerOrganizations/univ1.ipsum.io/users/Admin@univ1.ipsum.io/msp/signcerts"
+                                "key": "/etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/keystore",
+                                "cert": "/etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/signcerts"
                         }
                 },
-                "univ2": {
-                        "name": "peer0-univ2",
-                        "mspid": "univ2MSP",
+                "org2": {
+                        "name": "peer0-org2",
+                        "mspid": "org2MSP",
                         "peer1": {
-                                "requests": "grpcs://37.187.121.67:8051",
-                                "events": "grpcs://37.187.121.67:8053",
-                                "server-hostname": "peer0.univ2.ipsum.io",
-                                "tls_cacerts": "/etc/fabric/crypto-config/peerOrganizations/univ2.ipsum.io/peers/peer0.univ2.ipsum.io/tls/ca.crt"
+                                "requests": "grpcs://172.31.30.63:8051",
+                                "events": "grpcs://172.31.30.63:8053",
+                                "server-hostname": "peer0.org2.ipsum.io",
+                                "tls_cacerts": "/etc/fabric/crypto-config/peerOrganizations/org2.ipsum.io/peers/peer0.org2.ipsum.io/tls/ca.crt"
                         },
                         "admin": {
-                                "key": "/etc/fabric/crypto-config/peerOrganizations/univ2.ipsum.io/users/Admin@univ2.ipsum.io/msp/keystore",
-                                "cert": "/etc/fabric/crypto-config/peerOrganizations/univ2.ipsum.io/users/Admin@univ2.ipsum.io/msp/signcerts"
+                                "key": "/etc/fabric/crypto-config/peerOrganizations/org2.ipsum.io/users/Admin@org2.ipsum.io/msp/keystore",
+                                "cert": "/etc/fabric/crypto-config/peerOrganizations/org2.ipsum.io/users/Admin@org2.ipsum.io/msp/signcerts"
                         }
                 },
-                "univ3": {
-                        "name": "peer0-univ3",
-                        "mspid": "univ3MSP",
+                "org3": {
+                        "name": "peer0-org3",
+                        "mspid": "org3MSP",
                         "peer1": {
-                                "requests": "grpcs://37.187.121.67:9051",
-                                "events": "grpcs://37.187.121.67:9053",
-                                "server-hostname": "peer0.univ3.ipsum.io",
-                                "tls_cacerts": "/etc/fabric/crypto-config/peerOrganizations/univ3.ipsum.io/peers/peer0.univ3.ipsum.io/tls/ca.crt"
+                                "requests": "grpcs://172.31.30.63:9051",
+                                "events": "grpcs://172.31.30.63:9053",
+                                "server-hostname": "peer0.org3.ipsum.io",
+                                "tls_cacerts": "/etc/fabric/crypto-config/peerOrganizations/org3.ipsum.io/peers/peer0.org3.ipsum.io/tls/ca.crt"
                         },
                         "admin": {
-                                "key": "/etc/fabric/crypto-config/peerOrganizations/univ3.ipsum.io/users/Admin@univ3.ipsum.io/msp/keystore",
-                                "cert": "/etc/fabric/crypto-config/peerOrganizations/univ3.ipsum.io/users/Admin@univ3.ipsum.io/msp/signcerts"
+                                "key": "/etc/fabric/crypto-config/peerOrganizations/org3.ipsum.io/users/Admin@org3.ipsum.io/msp/keystore",
+                                "cert": "/etc/fabric/crypto-config/peerOrganizations/org3.ipsum.io/users/Admin@org3.ipsum.io/msp/signcerts"
                         }
                 }
         },
@@ -49,7 +49,7 @@
         "keyValueStore": "/tmp/fabric-client-kvs",
         "eventWaitTime": "30000",
         "pg": {
-                "host": "37.187.121.67",
+                "host": "172.31.30.63",
                 "port": "5432",
                 "database": "fabricexplorer",
                 "username": "postgres",

@@ -22,10 +22,10 @@ OrdererOrgs:
 # ---------------------------------------------------------------------------
 PeerOrgs:
   # ---------------------------------------------------------------------------
-  # univ1
+  # org1
   # ---------------------------------------------------------------------------
-  - Name: univ1
-    Domain: univ1.ipsum.io
+  - Name: org1
+    Domain: org1.ipsum.io
     EnableNodeOUs: true
     # ---------------------------------------------------------------------------
     # "Specs"
@@ -44,7 +44,7 @@ PeerOrgs:
     #                 Org.Domain, respectively.
     # ---------------------------------------------------------------------------
     # Specs:
-    #   - Hostname: foo # implicitly "foo.univ1.ipsum.io"
+    #   - Hostname: foo # implicitly "foo.org1.ipsum.io"
     #     CommonName: foo27.org5.ipsum.io # overrides Hostname-based FQDN set above
     #   - Hostname: bar
     #   - Hostname: baz
@@ -73,18 +73,18 @@ PeerOrgs:
       Count: 1
 
   # ---------------------------------------------------------------------------
-  # univ2: See "univ1" for full specification
+  # org2: See "org1" for full specification
   # ---------------------------------------------------------------------------
-  - Name: univ2
-    Domain: univ2.ipsum.io
+  - Name: org2
+    Domain: org2.ipsum.io
     EnableNodeOUs: true
     Template:
       Count: 1
     Users:
       Count: 1
 
-  - Name: univ3
-    Domain: univ3.ipsum.io
+  - Name: org3
+    Domain: org3.ipsum.io
     EnableNodeOUs: true
     Template:
       Count: 1

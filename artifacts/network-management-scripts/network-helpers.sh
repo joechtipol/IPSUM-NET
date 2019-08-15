@@ -35,20 +35,20 @@ setGlobals () {
   fi
 
   if [ $ORG -eq 1 ] ; then
-    CORE_PEER_LOCALMSPID="univ1MSP"
-    CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/tls/ca.crt
-    CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/users/Admin@univ1.ipsum.io/msp
-    CORE_PEER_ADDRESS=peer0.univ1.ipsum.io:7051
+    CORE_PEER_LOCALMSPID="org1MSP"
+    CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/tls/ca.crt
+    CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp
+    CORE_PEER_ADDRESS=peer0.org1.ipsum.io:7051
   elif [ $ORG -eq 2 ] ; then
-    CORE_PEER_LOCALMSPID="univ2MSP"
-    CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ2.ipsum.io/peers/peer0.univ2.ipsum.io/tls/ca.crt
-    CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ2.ipsum.io/users/Admin@univ2.ipsum.io/msp
-    CORE_PEER_ADDRESS=peer0.univ2.ipsum.io:7051
+    CORE_PEER_LOCALMSPID="org2MSP"
+    CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.ipsum.io/peers/peer0.org2.ipsum.io/tls/ca.crt
+    CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.ipsum.io/users/Admin@org2.ipsum.io/msp
+    CORE_PEER_ADDRESS=peer0.org2.ipsum.io:7051
   elif [ $ORG -eq 3 ] ; then
-    CORE_PEER_LOCALMSPID="univ3MSP"
-    CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ3.ipsum.io/peers/peer0.univ3.ipsum.io/tls/ca.crt
-    CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ3.ipsum.io/users/Admin@univ3.ipsum.io/msp
-    CORE_PEER_ADDRESS=peer0.univ3.ipsum.io:7051
+    CORE_PEER_LOCALMSPID="org3MSP"
+    CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org3.ipsum.io/peers/peer0.org3.ipsum.io/tls/ca.crt
+    CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org3.ipsum.io/users/Admin@org3.ipsum.io/msp
+    CORE_PEER_ADDRESS=peer0.org3.ipsum.io:7051
   else
     echo "================== ERROR !!! ORG Unknown =================="
   fi
@@ -127,12 +127,12 @@ instantiateChaincode () {
   # lets supply it directly as we know it using the "-o" option
   if [ -z "$CORE_PEER_TLS_ENABLED" -o "$CORE_PEER_TLS_ENABLED" = "false" ]; then
                 set -x
-    peer chaincode instantiate -o orderer.ipsum.io:7050 -C $CHANNEL_NAME -n mycc -l ${LANGUAGE} -v ${VERSION} -c '{"Args":["init","a","100","b","200"]}' -P "OR  ('univ1MSP.peer','univ2MSP.peer','univ3MSP.peer')" >&log.txt
+    peer chaincode instantiate -o orderer.ipsum.io:7050 -C $CHANNEL_NAME -n mycc -l ${LANGUAGE} -v ${VERSION} -c '{"Args":["init","a","100","b","200"]}' -P "OR  ('org1MSP.peer','org2MSP.peer','org3MSP.peer')" >&log.txt
     res=$?
                 set +x
   else
                 set -x
-    peer chaincode instantiate -o orderer.ipsum.io:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -l ${LANGUAGE} -v 1.0 -c '{"Args":["init","a","100","b","200"]}' -P "OR ('univ1MSP.peer','univ2MSP.peer','univ3MSP.peer')" >&log.txt
+    peer chaincode instantiate -o orderer.ipsum.io:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -l ${LANGUAGE} -v 1.0 -c '{"Args":["init","a","100","b","200"]}' -P "OR ('org1MSP.peer','org2MSP.peer','org3MSP.peer')" >&log.txt
     res=$?
                 set +x
   fi
@@ -148,7 +148,7 @@ upgradeChaincode () {
     setGlobals $PEER $ORG
 
     set -x
-    peer chaincode upgrade -o orderer.ipsum.io:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -v 2.0 -c '{"Args":["init","a","90","b","210"]}' -P "OR ('univ1MSP.peer','univ2MSP.peer','univ3MSP.peer')"
+    peer chaincode upgrade -o orderer.ipsum.io:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -v 2.0 -c '{"Args":["init","a","90","b","210"]}' -P "OR ('org1MSP.peer','org2MSP.peer','org3MSP.peer')"
     res=$?
   set +x
     cat log.txt

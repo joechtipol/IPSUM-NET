@@ -61,6 +61,10 @@ REPO_URL="$(echo ${13} | sed 's/\//\\\//g'| sed 's/\-/\\-/g' | sed 's/\./\\./g')
 
 CFG_PATH="\/etc\/fabric"
 
+FABRIC_CA_PATH=$FABRIC_CFG_PATH/crypto-config/peerOrganizations/$LC_ORG_NAME_1.$DOMAIN_NAME/ca/
+PRIVATE_KEY_ORG_1="$(ls $FABRIC_CA_PATH | grep _sk)"
+
+
 ARCH=`uname -s | grep Darwin`
 if [ "$ARCH" == "Darwin" ]; then
 OPTS="-it"
@@ -118,3 +122,5 @@ sed $OPTS "s/\%EXPLORER_DB_ADDRESS\%/$EXPLORER_DB_ADDRESS/g" $TEMPLATE_FILE
 echo "sed $OPTS "s/\%REPO_URL\%/$REPO_URL/g" $TEMPLATE_FILE"
 sed $OPTS "s/\%REPO_URL\%/$REPO_URL/g" $TEMPLATE_FILE
 
+echo "sed $OPTS "s/\%PRIVATE_KEY_ORG_1\%/$PRIVATE_KEY_ORG_1/g" $TEMPLATE_FILE"
+sed $OPTS "s/\%PRIVATE_KEY_ORG_1\%/$PRIVATE_KEY_ORG_1/g" $TEMPLATE_FILE

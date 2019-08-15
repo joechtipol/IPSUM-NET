@@ -7,9 +7,9 @@ version: '2'
 
 volumes:
   orderer.ipsum.io:
-  peer0.univ1.ipsum.io:
-  peer0.univ2.ipsum.io:
-  peer0.univ3.ipsum.io:
+  peer0.org1.ipsum.io:
+  peer0.org2.ipsum.io:
+  peer0.org3.ipsum.io:
   pgdata:
 
 networks:
@@ -21,13 +21,13 @@ services:
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.scriptum.com
-      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.univ1.ipsum.io-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/%PRIVATE_KEY%
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.ipsum.io-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/3fd2bdbf62d638c36ef669d38c05b6a05691cb6da8b75e21faed5212996fc0f6_sk
     ports:
       - "7054:7054"
     command: sh -c 'fabric-ca-server start -b admin:adminpw'
     volumes:
-      - /etc/fabric/crypto-config/peerOrganizations/univ1.ipsum.io/ca/:/etc/hyperledger/fabric-ca-server-config
+      - /etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/ca/:/etc/hyperledger/fabric-ca-server-config
     container_name: ca.scriptum.io
     networks:
       - byfn 
@@ -40,27 +40,27 @@ services:
     networks:
       - byfn
 
-  peer0.univ1.ipsum.io:
-    container_name: peer0.univ1.ipsum.io
+  peer0.org1.ipsum.io:
+    container_name: peer0.org1.ipsum.io
     extends:
       file: docker-compose-base.yaml
-      service: peer0.univ1.ipsum.io
+      service: peer0.org1.ipsum.io
     networks:
       - byfn
 
-  peer0.univ2.ipsum.io:
-    container_name: peer0.univ2.ipsum.io
+  peer0.org2.ipsum.io:
+    container_name: peer0.org2.ipsum.io
     extends:
       file:  docker-compose-base.yaml
-      service: peer0.univ2.ipsum.io
+      service: peer0.org2.ipsum.io
     networks:
       - byfn
 
-  peer0.univ3.ipsum.io:
-    container_name: peer0.univ3.ipsum.io
+  peer0.org3.ipsum.io:
+    container_name: peer0.org3.ipsum.io
     extends:
       file:  docker-compose-base.yaml
-      service: peer0.univ3.ipsum.io
+      service: peer0.org3.ipsum.io
     networks:
       - byfn
 
@@ -75,13 +75,13 @@ services:
       #- CORE_LOGGING_LEVEL=DEBUG
       - CORE_LOGGING_LEVEL=INFO
       - CORE_PEER_ID=cli
-      - CORE_PEER_ADDRESS=peer0.univ1.ipsum.io:7051
-      - CORE_PEER_LOCALMSPID=univ1MSP
+      - CORE_PEER_ADDRESS=peer0.org1.ipsum.io:7051
+      - CORE_PEER_LOCALMSPID=org1MSP
       - CORE_PEER_TLS_ENABLED=true
-      - CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/tls/server.crt
-      - CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/tls/server.key
-      - CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/tls/ca.crt
-      - CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/univ1.ipsum.io/users/Admin@univ1.ipsum.io/msp
+      - CORE_PEER_TLS_CERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/tls/ca.crt
+      - CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
     command: /bin/bash
     volumes:
@@ -94,9 +94,9 @@ services:
         - /etc/fabric/network-management-scripts/:/opt/gopath/src/github.com/hyperledger/fabric/network-management-scripts
     depends_on:
       - orderer.ipsum.io
-      - peer0.univ1.ipsum.io
-      - peer0.univ2.ipsum.io
-      - peer0.univ3.ipsum.io
+      - peer0.org1.ipsum.io
+      - peer0.org2.ipsum.io
+      - peer0.org3.ipsum.io
     networks:
       - byfn
 
@@ -121,9 +121,9 @@ services:
     depends_on:
       - explorerdb.ipsum.io
       - orderer.ipsum.io
-      - peer0.univ1.ipsum.io
-      - peer0.univ2.ipsum.io
-      - peer0.univ3.ipsum.io
+      - peer0.org1.ipsum.io
+      - peer0.org2.ipsum.io
+      - peer0.org3.ipsum.io
     environment:
       - DATABASE_HOST=explorerdb.scriptum.io
       - DATABASE_PASSWD=password123
