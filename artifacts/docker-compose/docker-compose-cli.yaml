@@ -11,6 +11,7 @@ volumes:
   peer0.org2.ipsum.io:
   peer0.org3.ipsum.io:
   pgdata:
+  walletstore:
 
 networks:
   byfn:
@@ -22,7 +23,7 @@ services:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.scriptum.com
       - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.ipsum.io-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/e87341a1f947f029b7590efb7410214407d3b53850bb23906502f7ab2bd57c09_sk
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/7185a446fff41468f31902c928846308467e60ca536176e02bbddea6380aa9c7_sk
     ports:
       - "7054:7054"
     command: sh -c 'fabric-ca-server start -b admin:adminpw'
@@ -129,10 +130,14 @@ services:
       - peer0.org3.ipsum.io
     environment:
       - DATABASE_HOST=explorerdb.ipsum.io
-      - DATABASE_USERNAME=hppoc        
+      - DATABASE_USERNAME=hppoc
       - DATABASE_PASSWD=password
       - DISCOVERY_AS_LOCALHOST=false
     networks:
       - byfn
     volumes:
-      - /etc/fabric:/etc/fabric
+      - ../explorer/config.json:/opt/explorer/app/platform/fabric/config.json
+      - ../explorer/connection-profile:/opt/explorer/app/platform/fabric/connection-profile
+      - /etc/fabric/crypto-config:/tmp/crypto
+      - walletstore:/opt/wallet
+    command: sh -c "sleep 16&& node /opt/explorer/main.js && tail -f /dev/null"

@@ -7,7 +7,7 @@
 		"adminUser": "admin",
 		"adminPassword": "adminpw",
 		"enableAuthentication": false,
-		"organization": "%LC_ORG_NAME_1%",
+		"organization": "org1MSP",
 		"connection": {
 			"timeout": {
 				"peer": {
@@ -20,7 +20,7 @@
 	"channels": {
 		"scriptum": {
 			"peers": {
-				"%PEER0_ORG1_ADDRESS%": {}
+				"peer0-org1": {}
 			},
 			"connection": {
 				"timeout": {
@@ -34,26 +34,26 @@
 		}
 	},
 	"organizations": {
-		"%LC_ORG_NAME_1%MSP": {
-			"mspid": "%LC_ORG_NAME_1%MSP",
+		"org1MSP": {
+			"mspid": "org1MSP",
 			"fullpath": true,
 			"adminPrivateKey": {
-				"path": "/etc/fabric/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/9b5e1e91c5e7ca0c0e83799586e729d027e4c1275f079b6c59584f50c7df1faa_sk"
+				"path": "/tmp/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/keystore/3aa7b47da7818d228e004900bcf7415249c7d6c753f897039148664cd7a1c7ca_sk"
 			},
 			"signedCert": {
-				"path": "/etc/fabric/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem"
+				"path": "/tmp/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/signcerts/Admin@org1.ipsum.io-cert.pem"
 			}
 		}
 	},
 	"peers": {
-		"peer0.org1.example.com": {
+		"peer0-org1": {
 			"tlsCACerts": {
-				"path": "/etc/fabric/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+				"path": "/tmp/crypto/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/tls/ca.crt"
 			},
-			"url": "grpcs://localhost:7051",
-			"eventUrl": "grpcs://localhost:7053",
+			"url": "grpcs://peer0.org1.ipsum.io:7051",
+			"eventUrl": "grpcs://peer0.org1.ipsum.io:7053",
 			"grpcOptions": {
-				"ssl-target-name-override": "peer0.org1.example.com"
+				"ssl-target-name-override": "peer0.org1.ipsum.io"
 			}
 		}
 	}
