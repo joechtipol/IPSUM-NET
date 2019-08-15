@@ -22,7 +22,7 @@ services:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.scriptum.com
       - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.ipsum.io-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/3fd2bdbf62d638c36ef669d38c05b6a05691cb6da8b75e21faed5212996fc0f6_sk
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/e87341a1f947f029b7590efb7410214407d3b53850bb23906502f7ab2bd57c09_sk
     ports:
       - "7054:7054"
     command: sh -c 'fabric-ca-server start -b admin:adminpw'
@@ -104,11 +104,14 @@ services:
     container_name: explorerdb.ipsum.io
     image: hyperledger/explorer-db:latest
     environment:
-      POSTGRES_PASSWORD: password123
+      - DATABASE_DATABASE=fabricexplorer
+      - DATABASE_USERNAME=hppoc
+      - DATABASE_PASSWORD=password
     ports:
       - "5432:5432"
     restart: always
     volumes:
+      - ../explorer/db/:/docker-entrypoint-initdb.d/
       - pgdata:/var/lib/postgresql/data
     networks:
       - byfn
@@ -125,8 +128,9 @@ services:
       - peer0.org2.ipsum.io
       - peer0.org3.ipsum.io
     environment:
-      - DATABASE_HOST=explorerdb.scriptum.io
-      - DATABASE_PASSWD=password123
+      - DATABASE_HOST=explorerdb.ipsum.io
+      - DATABASE_USERNAME=hppoc        
+      - DATABASE_PASSWD=password
       - DISCOVERY_AS_LOCALHOST=false
     networks:
       - byfn

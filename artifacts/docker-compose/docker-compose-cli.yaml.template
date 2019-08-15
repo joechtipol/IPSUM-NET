@@ -104,11 +104,14 @@ services:
     container_name: explorerdb.%DOMAIN_NAME%
     image: %REPO_URL%explorer-db:latest
     environment:
-      POSTGRES_PASSWORD: password123
+      - DATABASE_DATABASE=fabricexplorer
+      - DATABASE_USERNAME=hppoc
+      - DATABASE_PASSWORD=password
     ports:
       - "5432:5432"
     restart: always
     volumes:
+      - ../explorer/db/:/docker-entrypoint-initdb.d/
       - pgdata:/var/lib/postgresql/data
     networks:
       - byfn
@@ -125,8 +128,9 @@ services:
       - peer0.%LC_ORG_NAME_2%.%DOMAIN_NAME%
       - peer0.%LC_ORG_NAME_3%.%DOMAIN_NAME%
     environment:
-      - DATABASE_HOST=explorerdb.scriptum.io
-      - DATABASE_PASSWD=password123
+      - DATABASE_HOST=explorerdb.%DOMAIN_NAME%
+      - DATABASE_USERNAME=hppoc
+      - DATABASE_PASSWD=password
       - DISCOVERY_AS_LOCALHOST=false
     networks:
       - byfn
