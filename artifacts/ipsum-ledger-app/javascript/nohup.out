@@ -1,0 +1,234 @@
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Server running on port: 5000
+Connected to database
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Swarm listening on /ip4/127.0.0.1/tcp/4002/ipfs/QmQ7oMabm3ZpeUmBnUmTisekd6MyycUzyPoUiUCDSiRSuo
+Swarm listening on /ip4/54.37.14.182/tcp/4002/ipfs/QmQ7oMabm3ZpeUmBnUmTisekd6MyycUzyPoUiUCDSiRSuo
+Swarm listening on /ip4/172.22.0.1/tcp/4002/ipfs/QmQ7oMabm3ZpeUmBnUmTisekd6MyycUzyPoUiUCDSiRSuo
+Swarm listening on /ip4/127.0.0.1/tcp/4003/ws/ipfs/QmQ7oMabm3ZpeUmBnUmTisekd6MyycUzyPoUiUCDSiRSuo
+Swarm listening on /p2p-circuit/ipfs/QmQ7oMabm3ZpeUmBnUmTisekd6MyycUzyPoUiUCDSiRSuo
+Swarm listening on /p2p-circuit/ip4/127.0.0.1/tcp/4002/ipfs/QmQ7oMabm3ZpeUmBnUmTisekd6MyycUzyPoUiUCDSiRSuo
+Swarm listening on /p2p-circuit/ip4/54.37.14.182/tcp/4002/ipfs/QmQ7oMabm3ZpeUmBnUmTisekd6MyycUzyPoUiUCDSiRSuo
+Swarm listening on /p2p-circuit/ip4/172.22.0.1/tcp/4002/ipfs/QmQ7oMabm3ZpeUmBnUmTisekd6MyycUzyPoUiUCDSiRSuo
+Swarm listening on /p2p-circuit/ip4/127.0.0.1/tcp/4003/ws/ipfs/QmQ7oMabm3ZpeUmBnUmTisekd6MyycUzyPoUiUCDSiRSuo
+Version: 0.36.4
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}}]
+Coco avant parsing result dcs: 1
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}}]
+Coco avant parsing result dcs: 2
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}}]
+Coco avant parsing result dcs: 4
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}}]
+Coco avant parsing result dcs: 4
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}}]
+Coco avant parsing result dcs: 4
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}},{"Key":"STD_03393906", "Record":{"id_student":"03393906","first_name":"Pazingo","last_name":"Erimo","birth_date":"22/02/1993","nationality":"FRENCH","program_name":"Master Physics","score":"788","attribution_date":"07/08/2019","hash_content":"QmTVHTPXMB6mJCvt1TaAJS9gjkfzatticWkf6dwRodnQeV"}}]
+Coco avant parsing result dcs: 5
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}},{"Key":"STD_03393906", "Record":{"id_student":"03393906","first_name":"Pazingo","last_name":"Erimo","birth_date":"22/02/1993","nationality":"FRENCH","program_name":"Master Physics","score":"788","attribution_date":"07/08/2019","hash_content":"QmTVHTPXMB6mJCvt1TaAJS9gjkfzatticWkf6dwRodnQeV"}}]
+Coco avant parsing result dcs: 5
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}},{"Key":"STD_03393906", "Record":{"id_student":"03393906","first_name":"Pazingo","last_name":"Erimo","birth_date":"22/02/1993","nationality":"FRENCH","program_name":"Master Physics","score":"788","attribution_date":"07/08/2019","hash_content":"QmTVHTPXMB6mJCvt1TaAJS9gjkfzatticWkf6dwRodnQeV"}}]
+Coco avant parsing result dcs: 5
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Server running on port: 5000
+Connected to database
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}},{"Key":"STD_02393918", "Record":{"id_student":"02393918","first_name":"Sellami","last_name":"Adil","birth_date":"05/03/1998","nationality":"MORROCAN","program_name":"Master Data Analytics","score":"888","attribution_date":"07/08/2019","hash_content":"QmYW8a7bhCiZYDYbFHzaSms6KXozvDcFTSDNwcVAewXewB"}},{"Key":"STD_03393906", "Record":{"id_student":"03393906","first_name":"Pazingo","last_name":"Erimo","birth_date":"22/02/1993","nationality":"FRENCH","program_name":"Master Physics","score":"788","attribution_date":"07/08/2019","hash_content":"QmTVHTPXMB6mJCvt1TaAJS9gjkfzatticWkf6dwRodnQeV"}}]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}},{"Key":"STD_02393918", "Record":{"id_student":"02393918","first_name":"Sellami","last_name":"Adil","birth_date":"05/03/1998","nationality":"MORROCAN","program_name":"Master Data Analytics","score":"888","attribution_date":"07/08/2019","hash_content":"QmYW8a7bhCiZYDYbFHzaSms6KXozvDcFTSDNwcVAewXewB"}},{"Key":"STD_03393906", "Record":{"id_student":"03393906","first_name":"Pazingo","last_name":"Erimo","birth_date":"22/02/1993","nationality":"FRENCH","program_name":"Master Physics","score":"788","attribution_date":"07/08/2019","hash_content":"QmTVHTPXMB6mJCvt1TaAJS9gjkfzatticWkf6dwRodnQeV"}}]
+Coco avant parsing result dcs: 6
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}},{"Key":"STD_02393918", "Record":{"id_student":"02393918","first_name":"Sellami","last_name":"Adil","birth_date":"05/03/1998","nationality":"MORROCAN","program_name":"Master Data Analytics","score":"888","attribution_date":"07/08/2019","hash_content":"QmYW8a7bhCiZYDYbFHzaSms6KXozvDcFTSDNwcVAewXewB"}},{"Key":"STD_03393906", "Record":{"id_student":"03393906","first_name":"Pazingo","last_name":"Erimo","birth_date":"22/02/1993","nationality":"FRENCH","program_name":"Master Physics","score":"788","attribution_date":"07/08/2019","hash_content":"QmTVHTPXMB6mJCvt1TaAJS9gjkfzatticWkf6dwRodnQeV"}}]
+Coco avant parsing result dcs: 6
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}},{"Key":"STD_02393918", "Record":{"id_student":"02393918","first_name":"Sellami","last_name":"Adil","birth_date":"05/03/1998","nationality":"MORROCAN","program_name":"Master Data Analytics","score":"888","attribution_date":"07/08/2019","hash_content":"QmYW8a7bhCiZYDYbFHzaSms6KXozvDcFTSDNwcVAewXewB"}},{"Key":"STD_03393906", "Record":{"id_student":"03393906","first_name":"Pazingo","last_name":"Erimo","birth_date":"22/02/1993","nationality":"FRENCH","program_name":"Master Physics","score":"788","attribution_date":"07/08/2019","hash_content":"QmTVHTPXMB6mJCvt1TaAJS9gjkfzatticWkf6dwRodnQeV"}}]
+Coco avant parsing result dcs: 6
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Wallet path: /home/appli/devops/DL-Scriptum/scriptum-network/fabcar/javascript/wallet
+Transaction has been evaluated, result is: [{"Key":"STD_00000001", "Record":{"id_student":"00000001","first_name":"Prius","last_name":"Andrei","birth_date":"23/01/1999","nationality":"FRANCE","program_name":"Computer science","score":"730","attribution_date":"06/08/2019","hash_content":"QmWnCctQqpde2HUUrHRq7qY5u8rWZkYw5xhqk5ZgTvdWsd"}},{"Key":"STD_02393903", "Record":{"id_student":"02393903","first_name":"Toto","last_name":"Pawoo","birth_date":"13/05/1990","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"Qm"}},{"Key":"STD_02393905", "Record":{"id_student":"02393905","first_name":"Kozinkoi","last_name":"Vladimir","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Mathematics","score":"788","attribution_date":"07/08/2019","hash_content":"QmRebUmquh7jjQTzsSc2vrJsR9xWPThHsxRrT8t84mjXTb"}},{"Key":"STD_02393906", "Record":{"id_student":"02393906","first_name":"Drombilizou","last_name":"Menahim","birth_date":"22/02/1998","nationality":"FRENCH","program_name":"Master Big Data","score":"788","attribution_date":"07/08/2019","hash_content":"QmY1SoECsxLoMGa9An5JaxpcCYqyTKeYb7oMQryD3u98tH"}},{"Key":"STD_02393918", "Record":{"id_student":"02393918","first_name":"Sellami","last_name":"Adil","birth_date":"05/03/1998","nationality":"MORROCAN","program_name":"Master Data Analytics","score":"888","attribution_date":"07/08/2019","hash_content":"QmYW8a7bhCiZYDYbFHzaSms6KXozvDcFTSDNwcVAewXewB"}},{"Key":"STD_03393906", "Record":{"id_student":"03393906","first_name":"Pazingo","last_name":"Erimo","birth_date":"22/02/1993","nationality":"FRENCH","program_name":"Master Physics","score":"788","attribution_date":"07/08/2019","hash_content":"QmTVHTPXMB6mJCvt1TaAJS9gjkfzatticWkf6dwRodnQeV"}}]
+Coco avant parsing result dcs: 6
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
+Coco mon ami result dlCredential: [object Object]
