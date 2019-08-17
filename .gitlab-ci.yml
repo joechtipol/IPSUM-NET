@@ -2,7 +2,8 @@
 # see https://docs.gitlab.com/ce/ci/yaml/README.html for all available options
 
 # you can delete this line if you're not using Docker
-image: busybox:latest
+image: node:8.9.0
+
 
 variables:
   GIT_SSL_NO_VERIFY: "true"
@@ -21,7 +22,7 @@ build1:
   script:
     - echo "We will start build"
     - cd artifacts/
-    - sudo bash ./first-run-standalone.sh eu-west-1 ipsum.io org1 org2 org3 scriptum root
+    - bash ./first-run-standalone.sh eu-west-1 ipsum.io org1 org2 org3 scriptum root
     - echo "Finish build"
 
 test1:
