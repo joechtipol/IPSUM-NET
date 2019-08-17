@@ -20,7 +20,7 @@ build1:
   stage: build
   script:
     - echo "We will start build"
-    - bash -c "cd artifacts ; ./first-run-standalone.sh eu-west-1 ipsum.io org1 org2 org3 scriptum root"
+    - sudo -i -u root bash -c "cd artifacts ; ./first-run-standalone.sh eu-west-1 ipsum.io org1 org2 org3 scriptum root"
     - echo "Finish build"
 
 test1:
