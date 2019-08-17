@@ -4,8 +4,10 @@
 # you can delete this line if you're not using Docker
 image: busybox:latest
 
+variables:
+  GIT_SSL_NO_VERIFY: "true"
+
 before_script:
-  - git config --global http.sslVerify false
   - echo "Before script section"
   - echo "For example you might run an update here or install a build dependency"
   - echo "Or perhaps you might print out some debugging details"
