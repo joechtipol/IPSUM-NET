@@ -98,6 +98,10 @@ sudo cp -r ./explorer-config.json ./scripts ./chaincode ./docker-compose ./ipsum
 
 find /etc/fabric/ -exec sudo chmod +r {} \;
 
+zip -r fabric.zip /etc/fabric
+aws s3 cp fabric.zip s3://codepipeline-sdlc/fabric.zip
+rm fabric.zip
+
 
 
 echo "#############################################################"

@@ -48,3 +48,6 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 17
 set +x
 
 echo "Your network should now be up and running, connect to http://localhost:8080 or http://<ec2-host-dns-name>:80 to view the blockchain explorer."
+
+sudo -i -u $INSTANCE_USER bash -c "cd $HOME/devops/ipsum-net/artifacts ; ./network-management-scripts/network.sh down"
+
