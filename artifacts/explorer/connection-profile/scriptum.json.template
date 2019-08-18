@@ -19,6 +19,7 @@
 	},
 	"channels": {
 		"%CHANNEL_NAME%": {
+		    "orderers": ["orderer.%DOMAIN_NAME%"],
 			"peers": {
 				"peer0-%LC_ORG_NAME_1%": {}
 			},
@@ -30,7 +31,8 @@
 						"eventReg": "6000"
 					}
 				}
-			}
+			},
+			"certificateAuthorities": ["ca.%DOMAIN_NAME%"]
 		}
 	},
 	"organizations": {
@@ -56,5 +58,22 @@
 				"ssl-target-name-override": "peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%"
 			}
 		}
+	},
+	"certificateAuthorities": {
+		"ca.%DOMAIN_NAME%": {
+			"url": "http://%IP_ADDRESS%:7054",
+			"caName": "ca.%DOMAIN_NAME%"
+		}
+	},
+	"orderers": {
+		"orderer.%DOMAIN_NAME%": {
+		    "tlsCACerts": {
+				"path": "/tmp/crypto/ordererOrganizations/ipsum.io/users/Admin@ipsum.io/tls/ca.crt"
+			},
+			"url": "grpcs://%IP_ADDRESS%:7050",
+			"grpcOptions": {
+				"ssl-target-name-override": "orderer.%DOMAIN_NAME%"
+			}
+     }
 	}
 }
