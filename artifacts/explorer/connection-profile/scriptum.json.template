@@ -61,7 +61,7 @@
 	},
 	"certificateAuthorities": {
 		"ca.%DOMAIN_NAME%": {
-			"url": "http://%IP_ADDRESS%:7054",
+			"url": "http://%ORDER_ADDRESS%:7054",
 			"caName": "ca.%DOMAIN_NAME%"
 		}
 	},
@@ -70,7 +70,7 @@
 		    "tlsCACerts": {
 				"path": "/tmp/crypto/ordererOrganizations/ipsum.io/users/Admin@ipsum.io/tls/ca.crt"
 			},
-			"url": "grpcs://%IP_ADDRESS%:7050",
+			"url": "grpcs://%ORDER_ADDRESS%:7050",
 			"grpcOptions": {
 				"ssl-target-name-override": "orderer.%DOMAIN_NAME%"
 			}
