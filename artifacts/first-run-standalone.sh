@@ -40,14 +40,14 @@ fi
 
 DOCKER_BRIDGE_INTERFACE=`ifconfig | egrep "^br-" | sed 's/br\-\(.*\) Link.*/br\-\1/'`
 
-set -x
-sudo iptables -t nat -A POSTROUTING -o $DOCKER_BRIDGE_INTERFACE -j MASQUERADE
+#set -x
+#sudo iptables -t nat -A POSTROUTING -o $DOCKER_BRIDGE_INTERFACE -j MASQUERADE
 
 #172.18.0.7 is the IP of the explorer container - note that if we change the startup order this may change
-sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 172.18.0.7:8080
-set +x
+#sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 172.18.0.7:8080
+#set +x
 
 echo "Your network should now be up and running, connect to http://localhost:8080 or http://<ec2-host-dns-name>:80 to view the blockchain explorer."
 
-sudo -i -u $INSTANCE_USER bash -c "cd $HOME/devops/ipsum-net/artifacts ; ./network-management-scripts/network.sh down"
+#sudo -i -u $INSTANCE_USER bash -c "cd $HOME/devops/ipsum-net/artifacts ; ./network-management-scripts/network.sh down"
 

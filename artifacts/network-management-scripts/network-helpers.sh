@@ -70,7 +70,7 @@ chaincodeInvoke () {
                 set +x
   else
                 set -x
-    peer chaincode invoke -o orderer.ipsum.io:7050  --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -c '{"function":"initLedger","Args":[]}' >&log.txt
+    peer chaincode invoke -o orderer.ipsum.io:7050  --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n ipsumcc -c '{"function":"initLedger","Args":[]}' >&log.txt
     res=$?
                 set +x
   fi
@@ -173,7 +173,7 @@ chaincodeQuery () {
      sleep $DELAY
      echo "Attempting to Query peer${PEER}.org${ORG} ...$(($(date +%s)-starttime)) secs"
      set -x
-     peer chaincode query -C $CHANNEL_NAME -n mycc -c '{"Args":["query","a"]}' >&log.txt
+     peer chaincode query -C $CHANNEL_NAME -n ipsumcc -c '{"Args":["queryAllStudentsCredential"]}' >&log.txt
    res=$?
      set +x
      test $res -eq 100 && VALUE=$(cat log.txt | awk '/Query Result/ {print $NF}')

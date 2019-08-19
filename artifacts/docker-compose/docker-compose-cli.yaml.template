@@ -29,7 +29,7 @@ services:
     command: sh -c 'fabric-ca-server start -b admin:adminpw'
     volumes:
       - %FABRIC_CFG_PATH%/crypto-config/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/ca/:/etc/hyperledger/fabric-ca-server-config
-    container_name: ca.scriptum.io
+    container_name: ca.%DOMAIN_NAME%
     networks:
       - byfn 
  

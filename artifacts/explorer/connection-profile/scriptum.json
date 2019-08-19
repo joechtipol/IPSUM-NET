@@ -19,6 +19,7 @@
 	},
 	"channels": {
 		"scriptum": {
+		    "orderers": ["orderer.ipsum.io"],
 			"peers": {
 				"peer0-org1": {}
 			},
@@ -30,7 +31,8 @@
 						"eventReg": "6000"
 					}
 				}
-			}
+			},
+			"certificateAuthorities": ["ca.ipsum.io"]
 		}
 	},
 	"organizations": {
@@ -38,7 +40,7 @@
 			"mspid": "org1MSP",
 			"fullpath": true,
 			"adminPrivateKey": {
-				"path": "/tmp/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/keystore/3aa7b47da7818d228e004900bcf7415249c7d6c753f897039148664cd7a1c7ca_sk"
+				"path": "/tmp/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/keystore/93c600626bfa59787ba64f12f7cd82043db64b668cc8f87da5d8b59dfe3c2f35_sk"
 			},
 			"signedCert": {
 				"path": "/tmp/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/signcerts/Admin@org1.ipsum.io-cert.pem"
@@ -56,5 +58,22 @@
 				"ssl-target-name-override": "peer0.org1.ipsum.io"
 			}
 		}
+	},
+	"certificateAuthorities": {
+		"ca.ipsum.io": {
+			"url": "http://54.37.14.182:7054",
+			"caName": "ca.ipsum.io"
+		}
+	},
+	"orderers": {
+		"orderer.ipsum.io": {
+		    "tlsCACerts": {
+				"path": "/tmp/crypto/ordererOrganizations/ipsum.io/users/Admin@ipsum.io/tls/ca.crt"
+			},
+			"url": "grpcs://54.37.14.182:7050",
+			"grpcOptions": {
+				"ssl-target-name-override": "orderer.ipsum.io"
+			}
+     }
 	}
 }

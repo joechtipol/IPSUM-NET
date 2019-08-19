@@ -4,8 +4,8 @@
                         "name": "peer0-org1",
                         "mspid": "org1MSP",
                         "peer1": {
-                                "requests": "grpcs://172.31.30.63:7051",
-                                "events": "grpcs://172.31.30.63:7053",
+                                "requests": "grpcs://54.37.14.182:7051",
+                                "events": "grpcs://54.37.14.182:7053",
                                 "server-hostname": "peer0.org1.ipsum.io",
                                 "tls_cacerts": "/etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/tls/ca.crt"
                         },
@@ -18,8 +18,8 @@
                         "name": "peer0-org2",
                         "mspid": "org2MSP",
                         "peer1": {
-                                "requests": "grpcs://172.31.30.63:8051",
-                                "events": "grpcs://172.31.30.63:8053",
+                                "requests": "grpcs://54.37.14.182:8051",
+                                "events": "grpcs://54.37.14.182:8053",
                                 "server-hostname": "peer0.org2.ipsum.io",
                                 "tls_cacerts": "/etc/fabric/crypto-config/peerOrganizations/org2.ipsum.io/peers/peer0.org2.ipsum.io/tls/ca.crt"
                         },
@@ -32,8 +32,8 @@
                         "name": "peer0-org3",
                         "mspid": "org3MSP",
                         "peer1": {
-                                "requests": "grpcs://172.31.30.63:9051",
-                                "events": "grpcs://172.31.30.63:9053",
+                                "requests": "grpcs://54.37.14.182:9051",
+                                "events": "grpcs://54.37.14.182:9053",
                                 "server-hostname": "peer0.org3.ipsum.io",
                                 "tls_cacerts": "/etc/fabric/crypto-config/peerOrganizations/org3.ipsum.io/peers/peer0.org3.ipsum.io/tls/ca.crt"
                         },
@@ -49,7 +49,7 @@
         "keyValueStore": "/tmp/fabric-client-kvs",
         "eventWaitTime": "30000",
         "pg": {
-                "host": "172.31.30.63",
+                "host": "54.37.14.182",
                 "port": "5432",
                 "database": "fabricexplorer",
                 "username": "postgres",
