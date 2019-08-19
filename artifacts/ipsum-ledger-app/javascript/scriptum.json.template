@@ -1,0 +1,79 @@
+{
+	"name": "ipsum-network",
+	"version": "1.0.0",
+	"license": "Apache-2.0",
+	"client": {
+		"tlsEnable": true,
+		"adminUser": "admin",
+		"adminPassword": "adminpw",
+		"enableAuthentication": false,
+		"organization": "%LC_ORG_NAME_1%MSP",
+		"connection": {
+			"timeout": {
+				"peer": {
+					"endorser": "300"
+				},
+				"orderer": "300"
+			}
+		}
+	},
+	"channels": {
+		"%CHANNEL_NAME%": {
+		    "orderers": ["orderer.%DOMAIN_NAME%"],
+			"peers": {
+				"peer0-%LC_ORG_NAME_1%": {}
+			},
+			"connection": {
+				"timeout": {
+					"peer": {
+						"endorser": "6000",
+						"eventHub": "6000",
+						"eventReg": "6000"
+					}
+				}
+			},
+			"certificateAuthorities": ["ca.%DOMAIN_NAME%"]
+		}
+	},
+	"organizations": {
+		"%LC_ORG_NAME_1%MSP": {
+			"mspid": "%LC_ORG_NAME_1%MSP",
+			"fullpath": true,
+			"adminPrivateKey": {
+				"path": "/etc/fabric/crypto-config/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/users/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%/msp/keystore/%PRIVATE_KEYSTORE_MSP_ORG_1%"
+			},
+			"signedCert": {
+				"path": "/etc/fabric/crypto-config/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/users/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%/msp/signcerts/Admin@%LC_ORG_NAME_1%.%DOMAIN_NAME%-cert.pem"
+			}
+		}
+	},
+	"peers": {
+		"peer0-%LC_ORG_NAME_1%": {
+			"tlsCACerts": {
+				"path": "/etc/fabric/crypto-config/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/peers/peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%/tls/ca.crt"
+			},
+			"url": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7051",
+			"eventUrl": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7053",
+			"grpcOptions": {
+				"ssl-target-name-override": "peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%"
+			}
+		}
+	},
+	"certificateAuthorities": {
+		"ca.%DOMAIN_NAME%": {
+			"url": "http://%ORDER_ADDRESS%:7054",
+			"caName": "ca.%DOMAIN_NAME%"
+		}
+	},
+	"orderers": {
+		"orderer.%DOMAIN_NAME%": {
+		    "tlsCACerts": {
+				"path": "/etc/fabric/crypto-config/ordererOrganizations/ipsum.io/users/Admin@ipsum.io/tls/ca.crt"
+			},
+			"url": "grpcs://%ORDER_ADDRESS%:7050",
+			"grpcOptions": {
+				"ssl-target-name-override": "orderer.%DOMAIN_NAME%"
+			}
+     }
+	}
+}

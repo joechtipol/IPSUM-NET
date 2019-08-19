@@ -84,6 +84,8 @@ set -x
 
 ./detemplatize.sh explorer/connection-profile/scriptum.json $DOMAIN_NAME $ORG_NAME_1 $ORG_NAME_2 $ORG_NAME_3 $CHANNEL_NAME $FABRIC_PATH $IP_ADDRESS $IP_ADDRESS $IP_ADDRESS $IP_ADDRESS $IP_ADDRESS $REPO_URL
 
+./detemplatize.sh ipsum-ledger-app/javascript/scriptum.json $DOMAIN_NAME $ORG_NAME_1 $ORG_NAME_2 $ORG_NAME_3 $CHANNEL_NAME $FABRIC_PATH $IP_ADDRESS $IP_ADDRESS $IP_ADDRESS $IP_ADDRESS $IP_ADDRESS $REPO_URL
+
 
 set +x
 
