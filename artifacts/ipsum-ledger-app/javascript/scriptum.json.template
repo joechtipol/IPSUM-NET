@@ -52,8 +52,8 @@
 			"tlsCACerts": {
 				"path": "/etc/fabric/crypto-config/peerOrganizations/%LC_ORG_NAME_1%.%DOMAIN_NAME%/peers/peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%/tls/ca.crt"
 			},
-			"url": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7051",
-			"eventUrl": "grpcs://peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%:7053",
+			"url": "grpcs://%PEER0_ORG1_ADDRESS%:7051",
+			"eventUrl": "grpcs://%PEER0_ORG1_ADDRESS%:7053",
 			"grpcOptions": {
 				"ssl-target-name-override": "peer0.%LC_ORG_NAME_1%.%DOMAIN_NAME%"
 			}

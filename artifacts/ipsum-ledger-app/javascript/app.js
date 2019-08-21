@@ -8,7 +8,7 @@ const app = express();
 const {getHomePage} = require('./routes/index2');
 const {getHomePageBlockchain} = require('./routes/index');
 
-const {addPlayerPage, addPlayer, deletePlayer, editPlayer, editPlayerPage} = require('./routes/player');
+const {addDigitalCredentialPage, addDigitalCredential} = require('./routes/digital_credential');
 const port = 5000;
 
 
@@ -54,11 +54,8 @@ app.use(fileUpload()); // configure fileupload
 
 app.get('/app', getHomePageBlockchain);
 app.get('/app/blockchain', getHomePageBlockchain);
-app.get('/app/add', addPlayerPage);
-app.get('/app/edit/:id', editPlayerPage);
-app.get('/app/delete/:id', deletePlayer);
-app.post('/app/add', addPlayer);
-app.post('/app/edit/:id', editPlayer);
+app.get('/app/add', addDigitalCredentialPage);
+app.post('/app/add', addDigitalCredential);
 
 
 async function initWallet() {

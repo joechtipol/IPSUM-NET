@@ -40,7 +40,7 @@
 			"mspid": "org1MSP",
 			"fullpath": true,
 			"adminPrivateKey": {
-				"path": "/tmp/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/keystore/93c600626bfa59787ba64f12f7cd82043db64b668cc8f87da5d8b59dfe3c2f35_sk"
+				"path": "/tmp/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/keystore/34a2bb952ff8519c907c92765614b66e8086ff922def1e1c62e5139c9c3e45f0_sk"
 			},
 			"signedCert": {
 				"path": "/tmp/crypto/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/signcerts/Admin@org1.ipsum.io-cert.pem"

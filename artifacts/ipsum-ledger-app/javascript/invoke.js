@@ -12,7 +12,7 @@ var ipfsAPI = require('ipfs-api');
 var ipfs = ipfsAPI('vps471348.ovh.net', '5001'); //leaving out the arguments will default to these values
 
 
-const ccpPath = path.resolve(__dirname, '..', '..', 'network', 'scriptum.json');
+const ccpPath = path.resolve(__dirname, '..', 'javascript', 'scriptum.json');
 const ccpJSON = fs.readFileSync(ccpPath, 'utf8');
 const ccp = JSON.parse(ccpJSON);
 

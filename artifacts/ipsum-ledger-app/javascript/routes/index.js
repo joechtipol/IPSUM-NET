@@ -42,7 +42,7 @@ async function queryWallet() {
 
     	const path = require('path');
 
-    	const IPFS =require('ipfs');
+    	//const IPFS =require('ipfs');
         // Create a new file system based wallet for managing identities.
     	const { FileSystemWallet, Gateway } = require('fabric-network');
     	const fs = require('fs');
