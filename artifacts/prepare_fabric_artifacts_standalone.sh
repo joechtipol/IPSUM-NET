@@ -96,7 +96,7 @@ fi
 
 sudo mkdir /etc/fabric/
 sudo mv ./crypto-config ./channel-artifacts /etc/fabric/
-sudo cp -r ./explorer-config.json ./scripts ./chaincode ./docker-compose ./ipsum-ledger-app ./explorer ./tools-config/ ./tools-bin ./network-management-scripts /etc/fabric/
+sudo cp -r ./explorer-config.json ./Dockerfile ./scripts ./chaincode ./docker-compose ./ipsum-ledger-app ./explorer ./tools-config/ ./tools-bin ./network-management-scripts /etc/fabric/
 
 find /etc/fabric/ -exec sudo chmod +r {} \;
 

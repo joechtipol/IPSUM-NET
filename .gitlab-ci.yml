@@ -22,7 +22,7 @@ build1:
   script:
     - echo "We will start build"
     - cd artifacts/
-    - bash ./first-run-standalone.sh eu-west-1 ipsum.io org1 org2 org3 scriptum root
+    - bash ./first-run-standalone.sh eu-west-1 ipsum.io auditor university1 university2 scriptum root
     - echo "Finish build"
 
 test1:
