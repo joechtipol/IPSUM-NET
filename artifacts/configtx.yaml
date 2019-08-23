@@ -26,17 +26,17 @@ Profiles:
         Consortiums:
             SampleConsortium:
                 Organizations:
-                    - *org1
-                    - *org2
-                    - *org3
+                    - *auditor
+                    - *univ1
+                    - *univ2
     ThreeOrgsChannel:
         Consortium: SampleConsortium
         Application:
             <<: *ApplicationDefaults
             Organizations:
-                - *org1
-                - *org2
-                - *org3
+                - *auditor
+                - *univ1
+                - *univ2
             Capabilities:
                 <<: *ApplicationCapabilities
 
@@ -63,55 +63,55 @@ Organizations:
         # MSPDir is the filesystem path which contains the MSP configuration
         MSPDir: crypto-config/ordererOrganizations/ipsum.io/msp
 
-    - &org1
+    - &auditor
         # DefaultOrg defines the organization which is used in the sampleconfig
         # of the fabric.git development environment
-        Name: org1MSP
+        Name: auditorMSP
 
         # ID to load the MSP definition as
-        ID: org1MSP
+        ID: auditorMSP
 
-        MSPDir: crypto-config/peerOrganizations/org1.ipsum.io/msp
+        MSPDir: crypto-config/peerOrganizations/auditor.ipsum.io/msp
 
         AnchorPeers:
             # AnchorPeers defines the location of peers which can be used
             # for cross org gossip communication.  Note, this value is only
             # encoded in the genesis block in the Application section context
-            - Host: peer0.org1.ipsum.io
+            - Host: peer0.auditor.ipsum.io
               Port: 7051
 
-    - &org2
+    - &univ1
         # DefaultOrg defines the organization which is used in the sampleconfig
         # of the fabric.git development environment
-        Name: org2MSP
+        Name: univ1MSP
 
         # ID to load the MSP definition as
-        ID: org2MSP
+        ID: univ1MSP
 
-        MSPDir: crypto-config/peerOrganizations/org2.ipsum.io/msp
+        MSPDir: crypto-config/peerOrganizations/univ1.ipsum.io/msp
 
         AnchorPeers:
             # AnchorPeers defines the location of peers which can be used
             # for cross org gossip communication.  Note, this value is only
             # encoded in the genesis block in the Application section context
-            - Host: peer0.org2.ipsum.io
+            - Host: peer0.univ1.ipsum.io
               Port: 7051
 
-    - &org3
+    - &univ2
         # DefaultOrg defines the organization which is used in the sampleconfig
         # of the fabric.git development environment
-        Name: org3MSP
+        Name: univ2MSP
 
         # ID to load the MSP definition as
-        ID: org3MSP
+        ID: univ2MSP
 
-        MSPDir: crypto-config/peerOrganizations/org3.ipsum.io/msp
+        MSPDir: crypto-config/peerOrganizations/univ2.ipsum.io/msp
 
         AnchorPeers:
             # AnchorPeers defines the location of peers which can be used
             # for cross org gossip communication.  Note, this value is only
             # encoded in the genesis block in the Application section context
-            - Host: peer0.org3.ipsum.io
+            - Host: peer0.univ2.ipsum.io
               Port: 7051
 
 ################################################################################

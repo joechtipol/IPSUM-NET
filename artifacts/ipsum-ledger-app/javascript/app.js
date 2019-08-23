@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const path = require('path');
 const app = express();
+const FabricCAServices = require('fabric-ca-client');
+
 
 const {getHomePage} = require('./routes/index2');
 const {getHomePageBlockchain} = require('./routes/index');
@@ -13,7 +15,7 @@ const port = 5000;
 
 
 
-const { FileSystemWallet, Gateway } = require('fabric-network');
+const { FileSystemWallet, Gateway,X509WalletMixin } = require('fabric-network');
 const fs = require('fs');
 
 const ccpPath = path.resolve(__dirname, '..', 'javascript', 'scriptum.json');

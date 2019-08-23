@@ -7,7 +7,7 @@
 		"adminUser": "admin",
 		"adminPassword": "adminpw",
 		"enableAuthentication": false,
-		"organization": "org1MSP",
+		"organization": "auditorMSP",
 		"connection": {
 			"timeout": {
 				"peer": {
@@ -21,7 +21,7 @@
 		"scriptum": {
 		    "orderers": ["orderer.ipsum.io"],
 			"peers": {
-				"peer0-org1": {}
+				"peer0-auditor": {}
 			},
 			"connection": {
 				"timeout": {
@@ -36,26 +36,26 @@
 		}
 	},
 	"organizations": {
-		"org1MSP": {
-			"mspid": "org1MSP",
+		"auditorMSP": {
+			"mspid": "auditorMSP",
 			"fullpath": true,
 			"adminPrivateKey": {
-				"path": "/etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/keystore/34a2bb952ff8519c907c92765614b66e8086ff922def1e1c62e5139c9c3e45f0_sk"
+				"path": "/etc/fabric/crypto-config/peerOrganizations/auditor.ipsum.io/users/Admin@auditor.ipsum.io/msp/keystore/2f8107b28f0094817c429113bdcf380e6ae99ea53b3a61d5ed469e7f5e8d190a_sk"
 			},
 			"signedCert": {
-				"path": "/etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/users/Admin@org1.ipsum.io/msp/signcerts/Admin@org1.ipsum.io-cert.pem"
+				"path": "/etc/fabric/crypto-config/peerOrganizations/auditor.ipsum.io/users/Admin@auditor.ipsum.io/msp/signcerts/Admin@auditor.ipsum.io-cert.pem"
 			}
 		}
 	},
 	"peers": {
-		"peer0-org1": {
+		"peer0-auditor": {
 			"tlsCACerts": {
-				"path": "/etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/tls/ca.crt"
+				"path": "/etc/fabric/crypto-config/peerOrganizations/auditor.ipsum.io/peers/peer0.auditor.ipsum.io/tls/ca.crt"
 			},
 			"url": "grpcs://54.37.14.182:7051",
 			"eventUrl": "grpcs://54.37.14.182:7053",
 			"grpcOptions": {
-				"ssl-target-name-override": "peer0.org1.ipsum.io"
+				"ssl-target-name-override": "peer0.auditor.ipsum.io"
 			}
 		}
 	},

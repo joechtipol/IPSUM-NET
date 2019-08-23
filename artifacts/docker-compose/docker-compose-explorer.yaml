@@ -29,9 +29,9 @@ services:
     depends_on:
       - fabric-explorer-db
       - orderer.ipsum.io
-      - peer0.org1.ipsum.io
-      - peer0.org2.ipsum.io
-      - peer0.org3.ipsum.io
+      - peer0.auditor.ipsum.io
+      - peer0.univ1.ipsum.io
+      - peer0.univ2.ipsum.io
     networks:
       - byfn
     volumes:

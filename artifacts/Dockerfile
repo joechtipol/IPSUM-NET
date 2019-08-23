@@ -13,7 +13,7 @@ COPY . .
 WORKDIR /etc/fabric/ipsum-ledger-app/javascript
 
 RUN ls
-RUN cd /etc/fabric/ipsum-ledger-app/javascript && npm install
+RUN cd /etc/fabric/ipsum-ledger-app/javascript && npm install && node enrollAdmin.js
 # If you are building your code for production
 # RUN npm ci --only=production
 

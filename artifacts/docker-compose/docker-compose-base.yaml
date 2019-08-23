@@ -32,65 +32,65 @@ services:
     ports:
       - 7050:7050
 
-  peer0.org1.ipsum.io:
-    container_name: peer0.org1.ipsum.io
+  peer0.auditor.ipsum.io:
+    container_name: peer0.auditor.ipsum.io
     extends:
       file: peer-base.yaml
       service: peer-base
     image: hyperledger/fabric-peer:$IMAGE_TAG
     environment:
-      - CORE_PEER_ID=peer0.org1.ipsum.io
-      - CORE_PEER_ADDRESS=peer0.org1.ipsum.io:7051
-      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org1.ipsum.io:7051
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org1.ipsum.io:7051
-      - CORE_PEER_LOCALMSPID=org1MSP
+      - CORE_PEER_ID=peer0.auditor.ipsum.io
+      - CORE_PEER_ADDRESS=peer0.auditor.ipsum.io:7051
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.auditor.ipsum.io:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.auditor.ipsum.io:7051
+      - CORE_PEER_LOCALMSPID=auditorMSP
     volumes:
         - /var/run/:/host/var/run/
-        - /etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/msp:/etc/hyperledger/fabric/msp
-        - /etc/fabric/crypto-config/peerOrganizations/org1.ipsum.io/peers/peer0.org1.ipsum.io/tls:/etc/hyperledger/fabric/tls
-        - peer0.org1.ipsum.io:/var/hyperledger/production
+        - /etc/fabric/crypto-config/peerOrganizations/auditor.ipsum.io/peers/peer0.auditor.ipsum.io/msp:/etc/hyperledger/fabric/msp
+        - /etc/fabric/crypto-config/peerOrganizations/auditor.ipsum.io/peers/peer0.auditor.ipsum.io/tls:/etc/hyperledger/fabric/tls
+        - peer0.auditor.ipsum.io:/var/hyperledger/production
     ports:
       - 7051:7051
       - 7053:7053
 
-  peer0.org2.ipsum.io:
-    container_name: peer0.org2.ipsum.io
+  peer0.univ1.ipsum.io:
+    container_name: peer0.univ1.ipsum.io
     extends:
       file: peer-base.yaml
       service: peer-base
     image: hyperledger/fabric-peer:$IMAGE_TAG
     environment:
-      - CORE_PEER_ID=peer0.org2.ipsum.io
-      - CORE_PEER_ADDRESS=peer0.org2.ipsum.io:7051
-      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org2.ipsum.io:7051
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org2.ipsum.io:7051
-      - CORE_PEER_LOCALMSPID=org2MSP
+      - CORE_PEER_ID=peer0.univ1.ipsum.io
+      - CORE_PEER_ADDRESS=peer0.univ1.ipsum.io:7051
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.univ1.ipsum.io:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.univ1.ipsum.io:7051
+      - CORE_PEER_LOCALMSPID=univ1MSP
     volumes:
         - /var/run/:/host/var/run/
-        - /etc/fabric/crypto-config/peerOrganizations/org2.ipsum.io/peers/peer0.org2.ipsum.io/msp:/etc/hyperledger/fabric/msp
-        - /etc/fabric/crypto-config/peerOrganizations/org2.ipsum.io/peers/peer0.org2.ipsum.io/tls:/etc/hyperledger/fabric/tls
-        - peer0.org2.ipsum.io:/var/hyperledger/production
+        - /etc/fabric/crypto-config/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/msp:/etc/hyperledger/fabric/msp
+        - /etc/fabric/crypto-config/peerOrganizations/univ1.ipsum.io/peers/peer0.univ1.ipsum.io/tls:/etc/hyperledger/fabric/tls
+        - peer0.univ1.ipsum.io:/var/hyperledger/production
     ports:
       - 8051:7051
       - 8053:7053
 
-  peer0.org3.ipsum.io:
-    container_name: peer0.org3.ipsum.io
+  peer0.univ2.ipsum.io:
+    container_name: peer0.univ2.ipsum.io
     extends:
       file: peer-base.yaml
       service: peer-base
     image: hyperledger/fabric-peer:$IMAGE_TAG
     environment:
-      - CORE_PEER_ID=peer0.org3.ipsum.io
-      - CORE_PEER_ADDRESS=peer0.org3.ipsum.io:7051
-      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org3.ipsum.io:7051
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org3.ipsum.io:7051
-      - CORE_PEER_LOCALMSPID=org3MSP
+      - CORE_PEER_ID=peer0.univ2.ipsum.io
+      - CORE_PEER_ADDRESS=peer0.univ2.ipsum.io:7051
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.univ2.ipsum.io:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.univ2.ipsum.io:7051
+      - CORE_PEER_LOCALMSPID=univ2MSP
     volumes:
         - /var/run/:/host/var/run/
-        - /etc/fabric/crypto-config/peerOrganizations/org3.ipsum.io/peers/peer0.org3.ipsum.io/msp:/etc/hyperledger/fabric/msp
-        - /etc/fabric/crypto-config/peerOrganizations/org3.ipsum.io/peers/peer0.org3.ipsum.io/tls:/etc/hyperledger/fabric/tls
-        - peer0.org3.ipsum.io:/var/hyperledger/production
+        - /etc/fabric/crypto-config/peerOrganizations/univ2.ipsum.io/peers/peer0.univ2.ipsum.io/msp:/etc/hyperledger/fabric/msp
+        - /etc/fabric/crypto-config/peerOrganizations/univ2.ipsum.io/peers/peer0.univ2.ipsum.io/tls:/etc/hyperledger/fabric/tls
+        - peer0.univ2.ipsum.io:/var/hyperledger/production
     ports:
       - 9051:7051
       - 9053:7053
