@@ -49,8 +49,10 @@ app.set('views', __dirname + '/views'); // set express to look in this folder to
 app.set('view engine', 'ejs'); // configure template engine
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); // parse form data client
-app.use(express.static(path.join(__dirname, 'public'))); // configure express to use public folder
+//app.use(express.static(path.join(__dirname, 'public'))); // configure express to use public folder
 app.use(fileUpload()); // configure fileupload
+app.set('assets', __dirname + '/assets'); // set express to look in this folder to render our view
+app.use(express.static(path.join(__dirname, 'assets'))); // configure express to use public folder
 
 // routes for the app
 
@@ -58,6 +60,7 @@ app.get('/app', getHomePageBlockchain);
 app.get('/app/blockchain', getHomePageBlockchain);
 app.get('/app/add', addDigitalCredentialPage);
 app.post('/app/add', addDigitalCredential);
+
 
 
 async function initWallet() {
