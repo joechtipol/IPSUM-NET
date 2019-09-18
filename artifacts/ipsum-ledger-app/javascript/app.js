@@ -8,7 +8,7 @@ const FabricCAServices = require('fabric-ca-client');
 
 
 const {getHomePage} = require('./routes/index2');
-const {getHomePageBlockchain} = require('./routes/index');
+const {getHomePageBlockchain,getListDigitalCredentials} = require('./routes/index');
 
 const {addDigitalCredentialPage, addDigitalCredential} = require('./routes/digital_credential');
 const port = 5000;
@@ -57,8 +57,8 @@ app.use(express.static(path.join(__dirname, 'assets'))); // configure express to
 // routes for the app
 
 app.get('/app', getHomePageBlockchain);
-app.get('/app/blockchain', getHomePageBlockchain);
-app.get('/app/add', addDigitalCredentialPage);
+app.get('/app/digital_credentials', getListDigitalCredentials);
+app.get('/app/add_digital_credential', addDigitalCredentialPage);
 app.post('/app/add', addDigitalCredential);
 
 

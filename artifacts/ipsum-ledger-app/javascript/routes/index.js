@@ -6,31 +6,13 @@ module.exports = {
 	            ,digitalCredentials: result
 	        }));
 		
-			/*
-		async() => {
-			
-			result=await queryWallet();
-			res.render('index.ejs', {
-	            title: "Welcome to Socka | View Players"
+    },
+    getListDigitalCredentials: (req, res) => {
+		
+		queryWallet().then((result) =>res.render('list-digital-credentials.ejs', {
+	            title: "Welcome to IpsumLedger Admin | View and Add digital credentials"
 	            ,digitalCredentials: result
-	        });
-			
-			
-			
-			queryWallet('', (err, result) => {
-	            if (err) {
-	                res.redirect('/');
-	            }
-	            console.log(`Index old, result is: ${result.toString()}`);
-
-	            res.render('index2.ejs', {
-	                title: "Welcome to Socka | View Digital Credentials"
-	                ,digitalCredentials: result
-	            });
-
-	        });
-			
-		}*/
+	        }));
 		
     },
 };
