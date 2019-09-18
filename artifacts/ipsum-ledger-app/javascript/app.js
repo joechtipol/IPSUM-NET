@@ -59,7 +59,7 @@ app.use(express.static(path.join(__dirname, 'assets'))); // configure express to
 app.get('/app', getHomePageBlockchain);
 app.get('/app/digital_credentials', getListDigitalCredentials);
 app.get('/app/add_digital_credential', addDigitalCredentialPage);
-app.post('/app/add', addDigitalCredential);
+app.post('/app/add_digital_credential', addDigitalCredential);
 
 
 
