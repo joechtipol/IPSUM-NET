@@ -23,7 +23,7 @@ chmod +x hyperledger_fabric_prerequisites.sh
 
 #bash -c "cd ../artifacts ; ./prepare_fabric_artifacts_standalone.sh $DOMAIN_NAME $ORG_NAME_1 $ORG_NAME_2 $ORG_NAME_3 $CHANNEL_NAME $HOME/devops/HyperLedger-Ipsum-Network/artifacts $REPO_URL"
 
-sudo -i -u $INSTANCE_USER bash -c "cd $PWD ; ./prepare_fabric_artifacts_standalone.sh $DOMAIN_NAME $ORG_NAME_1 $ORG_NAME_2 $ORG_NAME_3 $CHANNEL_NAME $HOME/devops/ipsum-net/artifacts $REPO_URL"
+bash -c "cd $PWD ; ./prepare_fabric_artifacts_standalone.sh $DOMAIN_NAME $ORG_NAME_1 $ORG_NAME_2 $ORG_NAME_3 $CHANNEL_NAME $HOME/devops/ipsum-net/artifacts $REPO_URL"
 
 if [ "$?" -ne "0" ]; then
   echo "Failed to prepare artifacts. Failing.. "
@@ -31,7 +31,7 @@ if [ "$?" -ne "0" ]; then
 fi
 
 #bash -c "cd ../artifacts ; ./network-management-scripts/network.sh up-silent"
-sudo -i -u $INSTANCE_USER bash -c "cd $PWD ; ./network-management-scripts/network.sh up-silent"
+bash -c "cd $PWD ; ./network-management-scripts/network.sh up-silent"
 
 if [ "$?" -ne "0" ]; then
   echo "Failed to bring up network. Failing.. "
